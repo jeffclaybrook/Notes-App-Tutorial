@@ -8,7 +8,7 @@ Build a simple notes app with HTML, CSS, and JavaScript
 - Local storage
 
 ### Demo link:
-https://jeffclaybrook.github.io/Notes-App-Tutorial
+https://jeffclaybrook.github.io/Notes-App-Tutorial/
 
 ### Overview
 In this tutorial, you'll create a note taking application using HTML, CSS, and JavaScript.
