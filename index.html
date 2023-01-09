@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <button class="icon-btn menu-icon" aria-label="Menu button"></button>
+            <input type="text" class="search-input" placeholder="Search your notes">
+            <button class="icon-btn grid-view-icon" id="layout-btn" aria-label="Layout button" onclick="toggleLayout()"></button>
+            <button class="image-btn" aria-label="Avatar button"></button>
+        </div>
+    </header>
+    <main>
+        <ul class="notes"></ul>
+    </main>
+    <button class="add-btn" id="add-btn" aria-label="Create note" onclick="openModal()"><i class="add-icon"></i></button>
+    <div class="modal">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <button class="icon-btn back-icon" id="close-btn" aria-label="Close button" onclick="closeModal()"></button>
+                <button class="save-btn" id="save-btn" aria-label="Save button" form="form">Save</button>
+            </div>
+            <form class="modal-body" id="form">
+                <input type="text" class="title-field" placeholder="Title">
+                <textarea class="note-field" placeholder="Note"></textarea>
+            </form>
+            <div class="modal-footer">
+                <button class="icon-btn star-icon" id="star-btn" aria-label="Star button"></button>
+                <h5>Foo date, 2023</h5>
+                <button class="icon-btn delete-icon" id="delete-btn" aria-label="Delete button" onclick="deleteNote(editId)"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
